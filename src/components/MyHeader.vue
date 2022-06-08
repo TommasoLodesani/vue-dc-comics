@@ -84,9 +84,9 @@ export default {
 <style scoped lang="scss">
 
 header{
-  width: 80%;
+  width: 70%;
   margin: auto;
-  padding: 15px 0;
+  padding: 20px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;

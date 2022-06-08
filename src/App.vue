@@ -3,7 +3,15 @@
     <MyHeader/>
 
     <main>
-      <MyProducts/>
+      <section>
+        <MyProducts/>
+
+      </section>
+
+      <section id="icon">
+        <MyListIcon/>
+
+      </section>
     </main>
 
 
@@ -15,13 +23,15 @@
 import MyHeader from './components/MyHeader.vue'
 import MyFooter from './components/MyFooter.vue'
 import MyProducts from './components/MyProducts.vue'
+import MyListIcon from './components/MyListIcon.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
     MyFooter,
-    MyProducts
+    MyProducts,
+    MyListIcon
 
   }
 }
@@ -43,6 +53,11 @@ export default {
   // text-align: center;
   color: #2c3e50;
   // margin-top: 60px;
+
+  #icon{
+    background-color: #0282f9;
+  }
+
   
 }
 </style>
