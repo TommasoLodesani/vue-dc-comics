@@ -62,7 +62,7 @@ export default {
 #container_icon {
     width: 70%;
     margin: auto;
-    padding: 50px 20px;
+    padding: 50px 75px;
     display: flex;
     justify-content: space-between;
 

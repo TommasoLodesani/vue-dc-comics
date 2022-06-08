@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <h1>Questo è il FOOTER</h1>
+        
 
 
     </footer>
@@ -20,12 +20,13 @@ footer{
     width: 100%;
     // debug
     height: 480px;
-    background-color: yellow;
-    text-align: center;
+    background-image: url("../assets/img/footer-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 
-    h1{
-        color: blue;
-    }
+  
 }
 
     

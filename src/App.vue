@@ -14,8 +14,8 @@
       </section>
     </main>
 
-
     <MyFooter/>
+    
   </div>
 </template>
 
