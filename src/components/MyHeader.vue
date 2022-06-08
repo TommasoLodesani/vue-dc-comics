@@ -1,7 +1,16 @@
 <template>
     <header>
+      <img src="../assets/img/dc-logo.png" alt="logo DC">
 
-      <h1>Questo è l HEADER</h1>
+      <nav>
+        <ul>
+          <li v-for="(link, inedx) in links" :key="inedx">
+            <a href="link.url" :class="link.current ? 'here' : '' "> {{link.text}}</a>
+          </li>          
+        </ul>
+      </nav>
+
+      
 
     </header>
   
@@ -9,7 +18,64 @@
 
 <script>
 export default {
-  name: 'MyHeader'
+  name: 'MyHeader',
+  data(){
+    return {
+      links :[
+        {
+          text : "CHARACTERS",
+          url : "#",
+          current : false
+        },
+        {
+          text : "COMICS",
+          url : "#",
+          current : true
+        },
+        {
+          text : "MOVIE",
+          url : "#",
+          current : false
+        },
+        {
+          text : "TV",
+          url : "#",
+          current : false
+        },
+        {
+          text : "GAMES",
+          url : "#",
+          current : false
+        },
+        {
+          text : "COLLECTIBLES",
+          url : "#",
+          current : false
+        },
+        {
+          text : "VIDEOS",
+          url : "#",
+          current : false
+        },
+        {
+          text : "FANS",
+          url : "#",
+          current : false
+        },
+        {
+          text : "NEWS",
+          url : "#",
+          current : false
+        },
+        {
+          text : "SHOP",
+          url : "#",
+          current : false
+        }
+       
+      ]
+    }
+  }
  
 }
 </script>
@@ -18,16 +84,44 @@ export default {
 <style scoped lang="scss">
 
 header{
-  text-align: center;
-  width: 100%;
-  // debug
-  height: 115px;
-  background-color: green;
+  width: 80%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-
-  h1{
-    color: red;
+  img{
+    height: 80px;
   }
+
+  ul{
+    list-style-type: none;
+
+    li{
+      display: inline-block;
+      padding: 0 15px;
+
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover{
+          color: #0c7cec;
+        }
+        &.here{
+          border-bottom: solid 4px #0c7cec;
+          padding-bottom: 42px;
+          color: #0c7cec;
+        }
+      }
+
+    }
+    
+  }
+
 }
     
 
