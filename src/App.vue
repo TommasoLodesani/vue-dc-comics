@@ -21,6 +21,13 @@
     </main>
 
     <MyFooter/>
+
+    <section id="bottom_footer">
+      <MyBottomFooter/>
+
+    </section>
+
+
     
   </div>
 </template>
@@ -31,6 +38,7 @@ import MyFooter from './components/MyFooter.vue'
 import MyProducts from './components/MyProducts.vue'
 import MyListIcon from './components/MyListIcon.vue'
 import MyJumbotron from './components/MyJumbotron.vue'
+import MyBottomFooter from './components/MyBottomFooter.vue'
 
 export default {
   name: 'App',
@@ -39,7 +47,8 @@ export default {
     MyFooter,
     MyProducts,
     MyListIcon,
-    MyJumbotron
+    MyJumbotron,
+    MyBottomFooter
 
   }
 }
@@ -68,6 +77,10 @@ export default {
   
   #products{
     background-color: #1c1c1c;
+  }
+
+  #bottom_footer{
+    background-color: #303030;
   }
 
   
