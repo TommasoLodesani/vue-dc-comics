@@ -3,7 +3,7 @@
     <MyHeader/>
 
     <main>
-      <section>
+      <section id="products">
         <MyProducts/>
 
       </section>
@@ -56,6 +56,10 @@ export default {
 
   #icon{
     background-color: #0282f9;
+  }
+  
+  #products{
+    background-color: #1c1c1c;
   }
 
   

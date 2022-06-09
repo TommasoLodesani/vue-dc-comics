@@ -1,16 +1,16 @@
 <template>
-    <section id="container_icon">
+    <div id="container_icon">
 
         <a href="link.url" v-for="(link,index) in links" :key="index">
             <div class="product">
-                <img :src="link.immagine" alt="">
+                <img :src="link.immagine" :alt="link.text">
                 <h5> {{link.text}}</h5>
 
             </div>
 
         </a>
 
-    </section>
+    </div>
 
 </template>
 
