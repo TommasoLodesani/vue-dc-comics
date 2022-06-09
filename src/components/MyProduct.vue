@@ -1,8 +1,10 @@
 <template>
 
     <div class="product">
-      <img :src="details.thumb" :alt="details.type">
-      <h5>{{details.series}}</h5>
+
+        <img :src="details.thumb" :alt="details.type">
+
+        <h5>{{ details.series }}</h5>
 
     </div>
 
@@ -10,29 +12,28 @@
 
 <script>
 export default {
-  name: 'MyProduct',
-  props: {
-      details: Object
-  }
-  
+    name: 'MyProduct',
+    props: {
+        details: Object
+    }
+
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 .product {
-  flex-basis: calc(100% / 6);
-  padding: 10px;
+    flex-basis: calc(100% / 6);
+    padding: 10px;
 
-  img {
-    max-width: 100%;
+    img {
+        max-width: 100%;
 
-  }
+    }
 
-  h5{
-    color: white;
-  }
+    h5 {
+        color: white;
+    }
 
 }
 </style>

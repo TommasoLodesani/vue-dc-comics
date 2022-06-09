@@ -1,31 +1,28 @@
 <template>
-    <footer>
-        
 
+    <div>
 
-    </footer>
+    </div>
+   
   
 </template>
 
 <script>
 export default {
-  name: 'MyFooter'
+  name: 'MyJumbotron'
  
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-footer{
+div{
     width: 100%;
-    // debug
-    height: 480px;
-    background-image: url("../assets/img/footer-bg.jpg");
-    background-position: center;
+    height: 400px;
+    background-image: url("../assets/img/jumbotron.jpg");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     
-
-  
 }
 </style>

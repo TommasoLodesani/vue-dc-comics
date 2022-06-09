@@ -3,6 +3,12 @@
     <MyHeader/>
 
     <main>
+
+      <section>
+        <MyJumbotron/>
+
+      </section>
+
       <section id="products">
         <MyProducts/>
 
@@ -24,6 +30,7 @@ import MyHeader from './components/MyHeader.vue'
 import MyFooter from './components/MyFooter.vue'
 import MyProducts from './components/MyProducts.vue'
 import MyListIcon from './components/MyListIcon.vue'
+import MyJumbotron from './components/MyJumbotron.vue'
 
 export default {
   name: 'App',
@@ -31,7 +38,8 @@ export default {
     MyHeader,
     MyFooter,
     MyProducts,
-    MyListIcon
+    MyListIcon,
+    MyJumbotron
 
   }
 }

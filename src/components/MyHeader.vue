@@ -113,7 +113,7 @@ header{
         }
         &.here{
           border-bottom: solid 4px #0c7cec;
-          padding-bottom: 42px;
+          padding-bottom: 47px;
           color: #0c7cec;
         }
       }

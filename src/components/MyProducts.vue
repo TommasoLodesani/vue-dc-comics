@@ -4,12 +4,7 @@
 
     <MyProduct v-for="(prodottoiesimi, index) in listProducts" :key="index"
     :details="prodottoiesimi"
-    
-    
     />
-
-    
-
   </div>
 
 </template>
