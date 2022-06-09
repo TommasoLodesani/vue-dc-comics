@@ -1,11 +1,28 @@
 <template>
+  <div id="container">
 
-  <div id="container_contents">
+    <div class="container_title">
+      <h3>
+        CURRENT SERIES
 
-    <MyProduct v-for="(prodottoiesimi, index) in listProducts" :key="index"
-    :details="prodottoiesimi"
-    />
+      </h3>
+    </div>
+
+    <div class="container_contents">
+
+      <MyProduct v-for="(prodottoiesimi, index) in listProducts" :key="index" :details="prodottoiesimi" />
+    </div>
+
+    <div class="container_btn">
+      <button class="button button1">LOAD MORE</button>
+
+    </div>
+
+
+
   </div>
+
+
 
 </template>
 
@@ -14,7 +31,7 @@
 import MyProduct from './MyProduct.vue'
 export default {
   name: 'MyProducts',
-  components : {
+  components: {
     MyProduct
   },
   data() {
@@ -101,7 +118,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-#container_contents {
+#container {}
+
+.container_contents {
   // text-align: center;
   width: 70%;
   margin: auto;
@@ -111,6 +130,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0;
+  text-align: left;
 
 }
 
@@ -123,9 +143,37 @@ export default {
 
   }
 
-  h5{
+  h5 {
     color: white;
   }
 
+}
+
+.container_btn {
+  width: 100%;
+  text-align: center;
+
+  button {
+    padding: 12px 55px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #0282f9;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+}
+
+.container_title {
+  width: 250px;
+  height: 57px;
+  padding: 17px;
+  color: white;
+  font-weight: bold;
+  background-color: #0282f9;
+  text-align: center;
+  position: relative;
+  bottom: 27px;
+  left: 275px;
 }
 </style>
